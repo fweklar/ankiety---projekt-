@@ -1,0 +1,337 @@
+* {
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+}
+
+.login content {
+	  width: 30%;
+	  margin: 0px auto;
+	  padding: 20px;
+	  border: 1px solid #B0C4DE;
+	  background: white;
+	  border-radius: 0px 0px 10px 10px;
+}
+
+.error {
+	  width: 92%; 
+	  margin: 0px auto; 
+	  padding: 10px; 
+	  border: 1px solid #a94442; 
+	  color: #a94442; 
+	  background: #f2dede; 
+	  border-radius: 5px; 
+	  text-align: left;
+}
+.success {
+	  color: #3c763d; 
+	  background: #dff0d8; 
+	  border: 1px solid #3c763d;
+	  margin-bottom: 20px;
+}
+
+body {
+      margin: 0;
+}
+.navtop {
+      background-color: #800080;
+      height: 60px;
+      width: 100%;
+      border: 0;
+}
+.navtop div {
+      display: flex;
+      margin: 0 auto;
+      width: 1000px;
+      height: 100%;
+}
+.navtop div h1, .navtop div a {
+      display: inline-flex;
+      align-items: center;
+}
+.navtop div h1 {
+      flex: 1;
+      font-size: 24px;
+      padding: 0;
+      margin: 0;
+      color: #FFFFFF;
+      font-weight: normal;
+}
+.navtop div a {
+      padding: 0 20px;
+      text-decoration: none;
+      color: #FFFFFF;
+      font-weight: bold;
+}
+.navtop div a i {
+      padding: 1px 5px 0 0;
+}
+
+.navtop div a:hover {
+      color: #db7bc2;
+}
+
+.content {
+      width: 1000px;
+      margin: 0 auto;
+}
+.content h2 {
+      margin: 0;
+      padding: 25px 0;
+      font-size: 22px;
+      border-bottom: 1px solid #ebebeb;
+      color: #666666;
+}
+.index .create-poll {
+      display: inline-block;
+      text-decoration: none;
+      background-color: #c981b6;
+      font-weight: bold;
+      font-size: 14px;
+      border-radius: 5px;
+      color: #FFFFFF;
+      padding: 10px 15px;
+      margin: 15px 0;
+}
+
+.index .create-poll:hover {
+      background-color: #db7bc2;
+}
+
+.index table {
+      width: 100%;
+      padding-top: 30px;
+      border-collapse: collapse;
+}
+.index table thead {
+      background-color: #e3e6e8;
+      border-bottom: 1px solid #d3dae0;
+}
+.index table thead td {
+      padding: 10px;
+      font-weight: bold;
+      color: #800080;
+      font-size: 14px;
+}
+.index table tbody tr {
+      border-bottom: 2px solid #d3dae0;
+}
+
+.index table tbody tr:hover {
+      background-color: #b87da8;
+}
+.index table tbody tr:hover td {
+      color: #FFFFFF;
+}
+
+.index table tbody tr td {
+      padding: 10px;
+}
+.index table tbody tr td:nth-child(1) {
+      color: #a5a7a9;
+}
+.index table tbody tr td.actions {
+      padding: 8px;
+      text-align: right;
+}
+.index table tbody tr td.actions .view, .index table tbody tr td.actions .edit, .index table tbody tr td.actions .trash {
+      display: inline-flex;
+      text-align: right;
+      text-decoration: none;
+      color: #FFFFFF;
+      padding: 10px 12px;
+      border-radius: 5px;
+}
+.index table tbody tr td.actions .trash {
+      background-color: #b73737;
+}
+.index table tbody tr td.actions .trash:hover {
+      background-color: #a33131;
+}
+.index table tbody tr td.actions .edit {
+      background-color: #37afb7;
+}
+.index table tbody tr td.actions .edit:hover {
+      background-color: #319ca3;
+}
+.index table tbody tr td.actions .view {
+      background-color: #37b770;
+}
+.index table tbody tr td.actions .view:hover {
+      background-color: #31a364;
+}
+.create form {
+      padding: 15px 0;
+      display: flex;
+      flex-flow: column;
+      width: 400px;
+}
+.create form label {
+      display: inline-flex;
+      width: 100%;
+      padding: 10px 0;
+      margin-right: 25px;
+}
+.create form input, .create form textarea {
+      padding: 10px;
+      width: 100%;
+      margin-right: 25px;
+      margin-bottom: 15px;
+      border: 1px solid #cccccc;
+}
+.create form textarea {
+      height: 200px;
+}
+.create form input[type="submit"] {
+      display: block;
+      background-color: #c981b6;
+      border: 0;
+      font-weight: bold;
+      font-size: 14px;
+      color: #FFFFFF;
+      cursor: pointer;
+      width: 200px;
+      margin-top: 15px;
+      border-radius: 5px;
+}
+.create form input[type="submit"]:hover {
+      background-color: #db7bc2;
+}
+.delete .choice {
+      display: flex;
+}
+.delete .choice a {
+      display: inline-block;
+      text-decoration: none;
+      background-color: #c981b6;
+      font-weight: bold;
+      color: #FFFFFF;
+      padding: 10px 15px;
+      margin: 15px 10px 15px 0;
+      border-radius: 5px;
+}
+.delete .choice a:hover {
+      background-color: #db7bc2;
+}
+.vote form {
+      display: flex;
+      flex-flow: column;
+}
+
+.vote form label {
+      padding-bottom: 10px;
+}
+.vote form input[type="radio"] {
+      transform: scale(1.1);
+}
+.vote form input[type="submit"], .vote form a {
+      display: inline-block;
+      padding: 8px;
+      border-radius: 5px;
+      background-color: #c981b6;
+      border: 0;
+      font-weight: bold;
+      font-size: 14px;
+      color: #FFFFFF;
+      cursor: pointer;
+      width: 150px;
+      margin-top: 15px;
+}
+.vote form input[type="submit"]:hover, .vote form a:hover {
+      background-color: #db7bc2;
+}
+.vote form a {
+      text-align: center;
+      text-decoration: none;
+      background-color: #c981b6;
+      margin-left: 5px;
+}
+.result .wrapper {
+      display: flex;
+      flex-flow: column;
+}
+.result .wrapper .question {
+      width: 50%;
+      padding-bottom: 5px;
+}
+.result .wrapper .question p {
+      margin: 0;
+      padding: 5px 0;
+}
+.result .wrapper .question p span {
+      font-size: 14px;
+}
+.result .wrapper .question .result-bar {
+      display: flex;
+      height: 25px;
+      min-width: 5%;
+      background-color: #38b673;
+      border-radius: 5px;
+      font-size: 14px;
+      color: #FFFFFF;
+      justify-content: center;
+      align-items: center;
+}
+
+.hidden {
+        display: none;
+    }
+	
+.input-group {
+	  margin: 10px 0px 10px 0px;
+}
+.input-group label {
+	  display: block;
+	  text-align: left;
+	  margin: 3px;
+}
+.input-group input {
+	  height: 30px;
+	  width: 30%;
+	  padding: 5px 10px;
+	  font-size: 16px;
+	  border-radius: 5px;
+	  border: 1px solid gray;
+}
+
+.votehash {
+	  font-size: 0.5em;
+	  display:inline-block;
+	  width: auto;
+	  font-weight: 900;
+	  color: #3c763d; 
+	  background: #dff0d8; 
+	  margin-bottom: 20px;
+}
+
+.checkyes {
+	  width: 92%; 
+	  margin: 0px auto; 
+	  padding: 10px; 
+	  border: 1px solid #3c763d; 
+	  color: #3c763d; 
+	  background: #dff0d8; 
+	  border-radius: 5px; 
+	  text-align: left;
+}
+
+.checkno {
+	  width: 92%; 
+	  margin: 0px auto; 
+	  padding: 10px; 
+	  border: 1px solid #a94442; 
+	  color: #a94442; 
+	  background: #f2dede; 
+	  border-radius: 5px; 
+	  text-align: left;
+}
+
+.userhash {
+	  font-weight: 900;
+}
+
+.hidevote {
+	font-weight: 900;
+}
