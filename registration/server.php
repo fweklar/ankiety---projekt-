@@ -35,6 +35,7 @@ if (isset($_POST['reg_user'])) {
   }
 
   if (count($errors) == 0) {
+	$_SESSION['password'] = $password_1;  
   	$password = md5($password_1);
 
   	$query = "INSERT INTO users (username, email, password) 
