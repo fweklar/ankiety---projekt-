@@ -43,7 +43,7 @@ if (isset($_POST['reg_user'])) {
   	mysqli_query($db, $query);
   	$_SESSION['username'] = $username;
   	$_SESSION['success'] = "Jesteś teraz zalogowany!";
-  	header('location: /phpoll/index.php');
+  	header('location: /index.php');
   }
 }
 
@@ -66,7 +66,7 @@ $_SESSION['password'] = $password;
   	if (mysqli_num_rows($results) == 1) {
   	  $_SESSION['username'] = $username;
   	  $_SESSION['success'] = "Jesteś teraz zalogowany!";
-  	  header('location: /phpoll/index.php');
+  	  header('location: /index.php');
   	}else {
   		array_push($errors, "Zła nazwa użytkownika lub hasło!");
   	}
